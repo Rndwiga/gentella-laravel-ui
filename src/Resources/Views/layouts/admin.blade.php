@@ -146,7 +146,9 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="{{asset('frontEnd/images/img.jpg')}}" alt="..." class="img-circle profile_img">
+                {{--<img src="{{asset('frontEnd/images/img.jpg')}}" alt="..." class="img-circle profile_img">--}}
+                <img src="{{ Avatar::create(Auth::user()->name)->setBackground(env('UI_GENTELLA_PROFILE_BACKGROUND_NAVBAR'))->setDimension(128)->toBase64() }}" alt="..." class="img-circle profile_img">
+
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
@@ -201,7 +203,8 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="{{asset('frontEnd/images/img.jpg')}}" alt="">{{ Auth::user()->name }}
+                    {{--<img src="{{asset('frontEnd/images/img.jpg')}}" alt="">{{ Auth::user()->name }}--}}
+                    <img src="{{Avatar::create(Auth::user()->name)->setBackground(env('UI_GENTELLA_PROFILE_BACKGROUND_TOPBAR'))->setDimension(100)->toBase64() }}" alt="">{{ Auth::user()->name }}
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">

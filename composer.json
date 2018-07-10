@@ -12,7 +12,8 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "tyondo/menu-generator": "^1.0"
+        "tyondo/menu-generator": "^1.0",
+        "laravolt/avatar": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.5"

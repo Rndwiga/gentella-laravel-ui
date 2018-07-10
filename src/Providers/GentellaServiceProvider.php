@@ -2,7 +2,6 @@
 
 namespace Rndwiga\UiGentella\Providers;
 
-use ConsoleTVs\Charts\ChartsServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +15,6 @@ class GentellaServiceProvider extends ServiceProvider
     protected $providers = [
         GentellaRouteServiceProvider::class,
         TyondoMenuGeneratorServiceProvider::class,
-        ChartsServiceProvider::class,
     ];
 
     protected $aliases = [
